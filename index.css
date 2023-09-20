@@ -64,27 +64,43 @@ body {
 }
 
 .body-section {
-    max-width: 94%;
+    max-width: 1440px;
     height: 500px;
 }
 
 .banner-div {
+    max-width: 100%;
     display: grid;
     grid-template-columns: 240px 1fr;
     grid-gap: .5rem;
     gap: .5rem;
+    overflow: hidden;
+    
 }
 
 .slide-div {
     max-width: 100%;
+    overflow: hidden;
 
+}
+.slide-img{
+    overflow-x: scroll;
+    display: flex;
+    gap: 10px;
+}
+.slide-img::-webkit-scrollbar{
+    display: none;
 }
 
 .add {
     margin-top: 5px;
-    width: 75%;
+    width:100%;
     overflow: hidden;
     background-color: #fff;
+    overflow: scroll;
+}
+.add::-webkit-scrollbar{
+    display: none;
 }
 
 .add-img {
@@ -184,6 +200,16 @@ body {
 .big-hidden {
     display: none !important;
 }
+.mobile-card {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.mobile-card::-webkit-scrollbar {
+    display: none;
+}
+
 
 @media only screen and (max-width: 700px) {
     .small-hidden {
